@@ -6,6 +6,7 @@
 #include<vector>
 #include<queue>
 #include<string>
+#include<stdint.h>
 
 class ThreadPool
 {

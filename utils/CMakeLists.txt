@@ -1,6 +1,9 @@
-﻿cmake_minimum_required(VERSION 2.8)
+﻿
 
-project(source_build)
+set(OBJSRC
+  thread_pool.cpp
+  thread_task.cpp
+  exec_process.cpp)
 
-file(GLOB SRC "*.cpp")
-add_executable(${PROJECT_NAME} ${SRC} "main.cpp")
+
+add_library(utils STATIC ${OBJSRC})

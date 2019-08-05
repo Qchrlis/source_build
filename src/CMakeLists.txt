@@ -1,6 +1,6 @@
-﻿cmake_minimum_required(VERSION 2.8)
+﻿
+set(OBJSRC
+  recognize_option.cpp
+  option.cpp)
 
-project(source_build)
-
-file(GLOB SRC "*.cpp")
-add_executable(${PROJECT_NAME} ${SRC} "main.cpp")
+add_library(option STATIC ${OBJSRC})

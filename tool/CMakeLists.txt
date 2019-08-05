@@ -1,6 +1,10 @@
-﻿cmake_minimum_required(VERSION 2.8)
+﻿
+set(EARSRC capture_entry.cpp
+  capture_handle.cpp)
 
-project(source_build)
+add_executable(ear_handle ${EARSRC})
 
-file(GLOB SRC "*.cpp")
-add_executable(${PROJECT_NAME} ${SRC} "main.cpp")
+
+set(BUILDSRC capture_build.cpp)
+
+add_executable(src_build ${BUILDSRC})
