@@ -4,7 +4,7 @@
 #include"opt_type.h"
 #include<vector>
 #include<string>
-
+#include<stdint.h>
 
 
 class Option
